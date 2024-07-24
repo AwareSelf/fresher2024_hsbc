@@ -1,0 +1,45 @@
+
+1) jdk vs jre
+2) javac and java - how to run frm command prompt
+    why to set path?
+3) how is java platform independant> 
+    bytecode - platfm indep
+    jvm - platform dependant
+    java api
+    java.base--> java.lang
+    all classes implicitly extend from Object
+
+4) diff between ref vs instance
+   how to create memeber method - greetme()
+   calling the method
+      a) how to create a reference
+      b) how to create a instance using new
+      c) assigning new object to reference
+      d) ref.methodname();
+5) ref assignment -
+    garbage collection - when no ref is pointing to object
+
+     Emp e1 = new Emp(1,"Ram",5000)
+     Emp e2 = new Emp(2,"Shyam",6000);
+     e2=e1;
+     e2.display();
+     instance with empid 2 is eligible garbage collection
+ why garbage collection?
+  System.gc();
+ 6)instance properties vs static property
+
+ 7) class, constructor calling, 0 arg constr,
+    argwala constructor
+    Emp, Car
+    why argwala constructor? 
+    default constructor - 0 arg constructor
+    this reference - 
+       property shadow - explicitly this.property
+
+       Emp
+       Car
+
+ 8) Why we use toString()
+    when you pass ref to sop and if u havnot coded
+    toString - Object class toString - class@hashcode
+    ur own toString - emp property values
