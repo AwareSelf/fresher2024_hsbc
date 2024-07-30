@@ -1,7 +1,7 @@
 package layeredexample;
 
 //data-access layer
-public class OrderDAOArrays {
+public class OrderDAOArrays implements OrderDaoIntf{
 
     private Order[] orders;
     private int lastIndex;
@@ -20,7 +20,9 @@ public class OrderDAOArrays {
 
         //don't assign ref directly otherwise ref and array-ref will share same (memorywise same) Order object
         //instead create a copy and then assign
-        Order copy = new Order(o.getOrderId(),o.getOrderName(),o.getQty(),o.getOrderDate());
+        Order copy = new Order(o.getOrderId(),o.getOrderName(),
+                       o.getQty(),o.getOrderDate(),o.getPrice(),o.getTotalPrice());
+
         this.orders[this.lastIndex]= copy;
         this.lastIndex++;
         return o.getOrderId();

@@ -9,11 +9,23 @@ public class Order {
     private int qty;
     private LocalDate orderDate;
 
+    private double price;
+    private double totalPrice;
+
     public Order(int orderId, String orderName, int qty, LocalDate orderDate) {
         this.orderId = orderId;
         this.orderName = orderName;
         this.qty = qty;
         this.orderDate = orderDate;
+    }
+
+    public Order(int orderId, String orderName, int qty, LocalDate orderDate, double price, double totalPrice) {
+        this.orderId = orderId;
+        this.orderName = orderName;
+        this.qty = qty;
+        this.orderDate = orderDate;
+        this.price = price;
+        this.totalPrice = totalPrice;
     }
 
     public int getOrderId() {
@@ -45,6 +57,22 @@ public class Order {
         this.orderDate = orderDate;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
     @Override
     public boolean equals(Object obj) {
         return this.orderId == ((Order)obj).orderId;
@@ -58,6 +86,9 @@ public class Order {
                 ", orderName='" + orderName + '\'' +
                 ", qty=" + qty +
                 ", orderDate=" + orderDate +
+                ", price=" + price +
+                ", totalPrice=" + totalPrice +
                 '}';
-    }
+
+     }
 }

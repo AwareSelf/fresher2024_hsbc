@@ -1,7 +1,7 @@
 package layeredexample;
 
 //data-access layer
-public class OrderDAOList {
+public class OrderDAOList implements OrderDaoIntf{
 
     private Order[] orders;
     private int lastIndex;
