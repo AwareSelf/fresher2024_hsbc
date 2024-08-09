@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Greet Using Name</title>
+<script>
+
+function validateForm() {
+	  let x = document.forms["myForm"]["myname"].value;
+	//  let x = document.getElementsByName("myname").value;
+	 // alert(x);
+	  if (x == "") {
+	    alert("Name must be filled out");
+	    return false;
+	  }
+	}
+</script>
+</head>
+<body>
+ <div>
+          <form name="myForm" onsubmit="return validateForm()"  method="post" action="HelloWorld" >
+            <input type="text" name="myname" value="namrata" placeholder="enter your name"/><br/>
+            
+            <input type="submit" value="ADD" />
+          </form>
+ </div>
+
+</body>
+</html>

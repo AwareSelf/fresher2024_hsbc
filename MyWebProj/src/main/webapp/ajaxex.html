@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Greetings!</title>
+</head>
+<body>
+<h3>Ajax example!</h3>
+
+<p id="demo"> Show emp data here!</p>
+<script>
+  alert('making ajax fetch call');
+    async function loademp() {
+        const response = await fetch('http://localhost:8082/MyWebProj/emp.json');
+        const emp = await response.json();
+      
+        console.log(emp); 
+        const s = "emp details:empid="+emp.id+
+                   ",firstname:"+emp.firstname+
+                   ",lastname="+emp.lastname+
+                   ",sal:"+emp.salary;
+        	
+        document.getElementById("demo").innerHTML=s;
+       
+      }
+     loademp();
+</script>
+</body>
+</html>

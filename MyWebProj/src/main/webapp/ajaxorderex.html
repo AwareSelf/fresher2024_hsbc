@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Greetings!</title>
+</head>
+<body>
+<h3>Ajax example!</h3>
+
+<p id="demo"> Show order data based on orderid here!</p>
+<script>
+  alert('making ajax fetch call');
+    async function loademp() {
+        const response = await fetch('http://localhost:8082/MyWebProj/orderbl?orderid=1');
+         
+         const order = await response.json();
+      
+        console.log(order); 
+       const s = "order details:orderid="+order.orderid+
+                   ",ordername="+order.ordername+
+                   ",orderprice="+order.orderprice;
+                 
+       
+        console.log(response);
+        document.getElementById("demo").innerHTML=s;
+       
+      }
+     loademp();
+</script>
+</body>
+</html>

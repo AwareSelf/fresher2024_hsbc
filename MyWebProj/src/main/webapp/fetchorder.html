@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Greet Using Name</title>
+<script>
+
+function validateForm() {
+	  let x = document.forms["myForm"]["orderid"].value;
+	//  let x = document.getElementsByName("orderid").value;
+	 // alert(x);
+	  if (x == "") {
+	    alert("orderid must be filled out");
+	    return false;
+	  }
+	}
+</script>
+</head>
+<body>
+ <div>
+          <form name="myForm" onsubmit="return validateForm()"  
+                     method="post" action="orderbl" >
+                     
+            <input type="text" name="orderid" value="1" 
+              placeholder="enter orderid"/><br/>
+            
+            <input type="submit" value="GetOrder" />
+          </form>
+ </div>
+
+</body>
+</html>
