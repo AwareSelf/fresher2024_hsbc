@@ -1,0 +1,13 @@
+https://www.javaguides.net/2018/10/spring-boot-annotations.html
+1) What is a role of browser?
+2) what is a role of web server?
+3) what is a role of a web container inside the web server?
+4) what is the protocol used for communication between broswer and web server
+5) how spring boot app uses web server?
+   spring boot uses embedded tomcat server.
+   
+   we call spring boot framework as opinionated framework:
+   spring boot comes with lots of auto-configurations: default configurations:
+   
+   spring boot framework- default stuff - web server - tomcat
+   

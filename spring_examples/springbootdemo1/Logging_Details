@@ -1,0 +1,23 @@
+Logger levels:
+
+
+trace
+debug
+info
+Warn
+Error
+
+
+by default -> info mode is on in all packages and classes:- so by default all info,warn,error,fatal messages
+will be visible, as warn,error,fatal are more severe than info level.
+so logger.info,logger.warn,logger.error by default visible
+but logger.debug() and logger.trace() - will not be visible for info level. As debug level is less severe than info level.
+
+
+if you explicitly set : logging.level.fullpackagename:DEBUG in application properties then
+only for classes in these packages, it will show all messages of debug level and more servere level i.e. info,warn,error,fatal
+debug level is on: show all debug level msgs as well as info and above/more severe i.e. warn,error etc.
+
+
+
+

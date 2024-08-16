@@ -1,0 +1,6 @@
+docker container ls -a
+docker container stop id(first 4 digit)
+docker container prune
+docker compose -f docker-compose-05-zipkin.yaml up
+docker images
+docker image remove imageid(first 4 digits)

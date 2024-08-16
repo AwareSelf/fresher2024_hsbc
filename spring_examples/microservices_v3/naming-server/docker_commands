@@ -1,0 +1,13 @@
+docker container ls -a 
+ - to list all docker containers stopped as well as running
+docker container prune 
+ - to remove the stopped containers
+docker images
+ - to list all docker images
+docker image remove imageid (first 4 letters)
+ - to remove particular docker image
+ - you need to stop and remove(prune) stopped container first before
+   removing the image of that container
+   
+   (image is like blueprint and container is actual runtime
+    instance based on the blueprint) 
