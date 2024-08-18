@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="p1" class="org.example.impl.Person">
+      <property name="name" value="Arjun" />
+   </bean>
+
+
+   <bean id="hellobean" class="org.example.impl.HelloBean">
+      <property name="myname" value="Namrata" />
+      <property name="person" ref="p1" />
+   </bean>
+
+</beans>

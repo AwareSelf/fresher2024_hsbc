@@ -1,0 +1,19 @@
+Question 1>
+how to open multiple maven projects in IntelliJ (like eclipse)
+https://stackoverflow.com/questions/8774024/how-to-open-and-edit-multiple-projects-in-the-same-window
+
+Quetion 2> pfb steps to make devtools (Jar) work in IntelliJ by auto restart of application on code changes:
+1.file->settings->Build,Execution,Deployment->compiler->click->Build project automatically->apply->ok
+
+
+2.
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+     <scope>runtime</scope><!-- -->
+    <optional>true</optional>
+</dependency>
+3.file->settings->advance option->allow auto make start even if developed application in currently running->apply->ok
+
+4.restart IDE
