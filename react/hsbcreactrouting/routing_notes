@@ -1,0 +1,9 @@
+
+Note: the relative path(route) always get appended to the baseurl visible in browser
+Routing:
+1st part
+ (hyper)Links --> relative path (route)
+
+
+2nd part (mapping details - you map route to the component)
+   relative path (route) --> component to be visible
